@@ -1,0 +1,25 @@
+{
+    "render" : [
+        {
+    "id":"0001" ,
+    "name": "image 1",
+    "uri": "http://localhost:2000/renders/:id=0001",
+    "type":"image"             
+}
+,
+{
+    "id":"0002" ,
+    "name": "Song 1",
+    "uri": "http://localhost:2000/renders/:id=0002",
+    "type":"track"             
+
+}
+,
+{
+    "id":"0003" ,
+    "name": "video 1",
+    "uri": "http://localhost:2000/renders/:id=0003",
+    "type":"video"                            
+}
+    ]
+}

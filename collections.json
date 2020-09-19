@@ -1,0 +1,21 @@
+{
+    "media_collection" : [
+        {
+    "id":"0001" ,
+    "name": "Song 1",
+    "uri": "http://localhost:2000/collections/:id=0001"               
+}
+,
+{
+    "id":"0002" ,
+    "name": "Song 2",
+    "uri": "http://localhost:2000/collections/:id=0002"               
+}
+,
+{
+    "id":"0003" ,
+    "name": "Song 3",
+    "uri": "http://localhost:2000/collections/:id=0003"               
+}
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "name": "viwi.service.media",
+    "description": "",
+    "resources": {
+        "collections": {
+            "description": "The media collections can also be understood as media queues of the renderer. Media collections can only contain playable media like tracks, videos or pictures.",
+            "model": {
+                "name": "mediaCollectionObject",
+                "resource": "media.collections",
+                "properties": {
+                    "id": {
+                        "description": "collection id",
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "name": {
+                        "description": "collection name",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "object uri",
+                        "type": "string",
+                        "format": "uri"
+                    }
+                }
+            },
+            "endpoints": {
+                "resource": {
+                    "get": {
+                        "parameters": {}
+                    }
+                },
+                "element": {
+                    "get": {
+                        "parameters": {}
+                    },
+                    "delete": {
+                        "parameters": {}
+                    }
+                }
+            }
+        },
+        "renderers": {
+            "description": "The media player renderer can be understood as the actual media player. It accepts media objects and applies actions like play, pause etc. to them.",
+            "model": {
+                "name": "rendererObject",
+                "resource": "media.renderers",
+                "properties": {
+                    "id": {
+                        "description": "renderer id",
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "name": {
+                        "description": "renderer name",
+                        "type": "string"
+                    },
+                    "uri": {
+                        "description": "object uri",
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "type": {
+                        "description": "type of medium",
+                        "type": "string",
+                        "enum": [
+                            "track",
+                            "video",
+                            "image"
+                        ]
+                    }
+                }
+            },
+            "endpoints": {
+                "resource": {
+                    "get": {
+                        "parameters": {}
+                    }
+                },
+                "element": {
+                    "get": {
+                        "parameters": {}
+                    }
+                }
+            },
+            "systemTriggeredEvents": [
+                "element",
+                "resource"
+            ]
+        }
+    }
+}
